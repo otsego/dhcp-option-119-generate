@@ -1,0 +1,29 @@
+# Copy to a repo as .gitattributes. Keeps line endings right on both Mac and Windows.
+* text=auto
+
+# Unix scripts and configs: always LF (a CRLF breaks them on macOS)
+*.sh      text eol=lf
+*.zsh     text eol=lf
+*.bash    text eol=lf
+*.py      text eol=lf
+*.plist   text eol=lf
+*.mobileconfig text eol=lf
+
+# Windows scripts: always CRLF
+*.ps1     text eol=crlf
+*.psm1    text eol=crlf
+*.psd1    text eol=crlf
+*.cmd     text eol=crlf
+*.bat     text eol=crlf
+
+# Binary
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.icns binary
+*.pdf  binary
+*.zip  binary
+*.pkg  binary
+*.dmg  binary
+*.msi  binary
+*.exe  binary
